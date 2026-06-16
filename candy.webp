@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/index.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Ice-Cream Brand</title>
+  <link rel="stylesheet" href="./candy_files/style.css">
+  <link href="./candy_files/css2" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="hero">
+    <h1 class="hero__title">NEW ICE-CREAM BRAND</h1>
+    <p class="hero__sub">Best selling ice cream brand where we sell ice cream made from fresh fruits and milk.</p>
+  </header>
+
+  <!-- GALLERY GRID -->
+  <main>
+    <section class="gallery">
+      <div class="card">
+        <img src="./candy_files/candy.jpg" alt="Strawberry Berry Bowl">
+        <div class="card__label">Strawberry Bliss</div>
+      </div>
+      <div class="card">
+        <img src="./candy_files/candy.jpg" alt="Blueberry Citrus Bowl">
+        <div class="card__label">Blueberry Citrus</div>
+      </div>
+      <div class="card">
+        <img src="./candy_files/candy.jpg" alt="Tropical Burst Bowl">
+        <div class="card__label">Tropical Burst</div>
+      </div>
+      <div class="card">
+        <img src="./candy_files/candy.jpg" alt="Mixed Berry Bowl">
+        <div class="card__label">Mixed Berry Dream</div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+      <div class="about__text">
+        <h2>Made With Love &amp; Fresh Ingredients</h2>
+        <p>Every scoop is crafted using the finest seasonal fruits and farm-fresh milk. No artificial flavors — just pure, natural goodness in every bowl.</p>
+        <a href="http://127.0.0.1:5500/index.html#" class="btn">Explore Our Menu</a>
+      </div>
+      <div class="about__badge">🍓</div>
+    </section>
+
+    <!-- FEATURES ROW -->
+    <section class="features">
+      <div class="feature">
+        <span class="feature__icon">🥛</span>
+        <h3>Farm Fresh Milk</h3>
+        <p>Sourced daily from local farms for the creamiest texture.</p>
+      </div>
+      <div class="feature">
+        <span class="feature__icon">🍊</span>
+        <h3>Real Fruit Only</h3>
+        <p>We use whole fruits, never concentrates or artificial syrups.</p>
+      </div>
+      <div class="feature">
+        <span class="feature__icon">❄️</span>
+        <h3>Slow Churned</h3>
+        <p>Slow-churned in small batches for an ultra-smooth finish.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 New Ice-Cream Brand · Made with 🍓 and fresh milk</p>
+  </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
